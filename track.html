@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RidePulse - Track Bus</title>
+
+<link rel="stylesheet" href="trackstyle.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+</head>
+
+<body>
+
+<nav>
+    <h1>RidePulse</h1>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="routes.html">Routes</a></li>
+    </ul>
+</nav>
+
+<section class="title">
+    <h2>Live Bus Tracking</h2>
+    <p>Track your selected bus in real time</p>
+</section>
+
+<div id="map"></div>
+
+<!-- DASHBOARD SECTION -->
+<section class="dashboard">
+
+    <div class="card">
+        <h3 id="busName">Bus 101</h3>
+        <p id="routeName">Paltan Bazar → Jalukbari</p>
+        <p><strong>Next Stop:</strong> Panbazar</p>
+        <p><strong>Status:</strong> <span class="status">On Time</span></p>
+    </div>
+
+    <div class="card">
+        <h3>Live Status</h3>
+        <p><strong>ETA:</strong> <span id="eta">8 mins</span></p>
+        <p><strong>Speed:</strong> <span id="speed">34</span> km/h</p>
+        <p><strong>Crowd:</strong> <span class="crowd-mid">Medium</span></p>
+        <p><strong>Time:</strong> <span id="clock"></span></p>
+    </div>
+
+</section>
+
+<div class="buttons">
+    <button onclick="location.reload()">Refresh</button>
+    <button onclick="location.href='routes.html'">Back</button>
+</div>
+
+<footer>
+    <p>RidePulse © 2026 | Smart Bus Tracking System</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="track.js"></script>
+
+</body>
+</html>

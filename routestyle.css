@@ -1,0 +1,113 @@
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* BODY */
+body{
+font-family:Arial, sans-serif;
+background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(0,0,0,0.25);
+backdrop-filter:blur(6px);
+}
+
+nav h1{
+font-size:26px;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:80px 20px 40px;
+}
+
+.hero h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+opacity:0.9;
+}
+
+/* ROUTES CONTAINER */
+.routes-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:40px 20px;
+}
+
+/* ROUTE CARD */
+.route-card{
+background:white;
+color:black;
+padding:25px;
+width:260px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.route-card:hover{
+transform:translateY(-8px);
+}
+
+/* BUTTON */
+.route-card button{
+margin-top:15px;
+padding:12px 20px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+background:#00e5ff;
+color:black;
+font-weight:bold;
+transition:0.3s;
+}
+
+.route-card button:hover{
+background:#00c2d6;
+transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.2);
+margin-top:40px;
+font-size:14px;
+}

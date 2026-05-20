@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>RidePulse Live Tracking</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+</head>
+
+<body class="track-page">
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav>
+
+    <h1>RidePulse</h1>
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="routes.html">
+                Routes
+            </a>
+        </li>
+
+        <li>
+            <a href="driver.html">
+                Driver Access
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- =========================
+     TITLE
+========================= -->
+
+<section class="track-title">
+
+    <h2>
+        Live Bus Tracking
+    </h2>
+
+    <p>
+        Track the real-time location of
+        Route 101 bus.
+    </p>
+
+</section>
+
+<!-- =========================
+     STATUS SECTION
+========================= -->
+
+<section class="live-status-container">
+
+    <div class="status-card">
+
+        <h3>Bus Status</h3>
+
+        <p id="busStatus">
+
+            Waiting for driver...
+
+        </p>
+
+    </div>
+
+    <div class="status-card">
+
+        <h3>Route</h3>
+
+        <p>
+
+            Paltan Bazar → Jalukbari
+
+        </p>
+
+    </div>
+
+    <div class="status-card">
+
+        <h3>Bus Number</h3>
+
+        <p id="liveBusNumber">
+
+            101
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     MAP
+========================= -->
+
+<section class="map-section">
+
+    <div id="map"></div>
+
+</section>
+
+<!-- =========================
+     LIVE INFO
+========================= -->
+
+<section class="coordinates-section">
+
+    <div class="coordinate-card">
+
+        <h3>Latitude</h3>
+
+        <p id="latitude">
+
+            --
+
+        </p>
+
+    </div>
+
+    <div class="coordinate-card">
+
+        <h3>Longitude</h3>
+
+        <p id="longitude">
+
+            --
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        RidePulse © 2026
+    </p>
+
+</footer>
+
+<!-- =========================
+     LEAFLET
+========================= -->
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+<script src="firebase.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RidePulse Driver Access</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="driver-body">
+
+<!-- NAVBAR -->
+
+<nav class="driver-nav">
+
+    <h1>RidePulse Driver</h1>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="routes.html">Routes</a></li>
+        <li><a href="driver.html">Driver Access</a></li>
+    </ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="driver-hero">
+
+    <h2>Driver Access Portal</h2>
+
+    <p>
+        Login or register your bus to enable
+        real-time passenger tracking.
+    </p>
+
+</section>
+
+<!-- DRIVER CONTAINER -->
+
+<section class="driver-container">
+
+    <!-- LOGIN -->
+
+    <div class="driver-card premium-card">
+
+        <h3>Driver Login</h3>
+
+        <p class="card-subtitle">
+            Access your tracking dashboard
+        </p>
+
+        <form id="loginForm">
+
+            <input
+            type="text"
+            id="loginBus"
+            placeholder="Bus Number"
+            required>
+
+            <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            required>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- REGISTER -->
+
+    <div class="driver-card premium-card">
+
+        <h3>Driver Registration</h3>
+
+        <p class="card-subtitle">
+            Register your bus for tracking
+        </p>
+
+        <form id="registerForm">
+
+            <input
+            type="text"
+            id="driverName"
+            placeholder="Driver Name"
+            required>
+
+            <input
+            type="text"
+            id="busNumber"
+            placeholder="Bus Number"
+            required>
+
+            <select id="routeSelect" required>
+
+                <option value="">
+                    Select Route
+                </option>
+
+                <option>
+                    Paltan Bazar → Jalukbari
+                </option>
+
+                <option>
+                    Six Mile → Adabari
+                </option>
+
+                <option>
+                    Narengi → Maligaon
+                </option>
+
+                <option>
+                    ISBT → Beltola
+                </option>
+
+            </select>
+
+            <input
+            type="password"
+            id="registerPassword"
+            placeholder="Create Password"
+            required>
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- INFO SECTION -->
+
+<section class="driver-features">
+
+    <div class="info-card driver-info">
+
+        <h3>📍 Real-Time GPS</h3>
+
+        <p>
+            Share live location using your mobile device.
+        </p>
+
+    </div>
+
+    <div class="info-card driver-info">
+
+        <h3>🚌 Bus Management</h3>
+
+        <p>
+            Connect your assigned bus with RidePulse.
+        </p>
+
+    </div>
+
+    <div class="info-card driver-info">
+
+        <h3>⚡ Smart Tracking</h3>
+
+        <p>
+            Help passengers track routes with ease.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="driver-footer">
+
+    <p>
+        RidePulse Driver Portal © 2026
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

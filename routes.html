@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>RidePulse Routes</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav>
+
+    <h1>RidePulse</h1>
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="routes.html">
+                Routes
+            </a>
+        </li>
+
+        <li>
+            <a href="driver.html">
+                Driver Access
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- =========================
+     PAGE TITLE
+========================= -->
+
+<section class="page-title">
+
+    <h2>Available City Bus Routes</h2>
+
+    <p>
+        Live tracking is currently available
+        for selected routes only.
+    </p>
+
+</section>
+
+<!-- =========================
+     ROUTES SECTION
+========================= -->
+
+<section class="routes-container">
+
+    <!-- LIVE ROUTE -->
+
+    <div class="route-card live-route">
+
+        <span class="live-badge">
+            LIVE
+        </span>
+
+        <h3>
+            Paltan Bazar → Jalukbari
+        </h3>
+
+        <p>
+            Route No: 101
+        </p>
+
+        <p>
+            Real-time live bus tracking available.
+        </p>
+
+        <button onclick="trackBus('101')">
+
+            Track Bus
+
+        </button>
+
+    </div>
+
+    <!-- COMING SOON 1 -->
+
+    <div class="route-card upcoming-route">
+
+        <span class="soon-badge">
+            COMING SOON
+        </span>
+
+        <h3>
+            Six Mile → Adabari
+        </h3>
+
+        <p>
+            Route No: 202
+        </p>
+
+        <p>
+            Live driver integration under testing.
+        </p>
+
+        <button onclick="comingSoonAlert()">
+
+            Demo Route
+
+        </button>
+
+    </div>
+
+    <!-- COMING SOON 2 -->
+
+    <div class="route-card upcoming-route">
+
+        <span class="soon-badge">
+            COMING SOON
+        </span>
+
+        <h3>
+            Narengi → Maligaon
+        </h3>
+
+        <p>
+            Route No: 303
+        </p>
+
+        <p>
+            Expansion planned for future release.
+        </p>
+
+        <button onclick="comingSoonAlert()">
+
+            Demo Route
+
+        </button>
+
+    </div>
+
+    <!-- COMING SOON 3 -->
+
+    <div class="route-card upcoming-route">
+
+        <span class="soon-badge">
+            COMING SOON
+        </span>
+
+        <h3>
+            ISBT → Beltola
+        </h3>
+
+        <p>
+            Route No: 404
+        </p>
+
+        <p>
+            Real-time support coming soon.
+        </p>
+
+        <button onclick="comingSoonAlert()">
+
+            Demo Route
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        RidePulse © 2026
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
